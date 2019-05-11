@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  web:
+    command: python manage.py check --deploy
+    environment:
+      - DJANGO_SETTINGS_MODULE=foster_server.settings_prod
